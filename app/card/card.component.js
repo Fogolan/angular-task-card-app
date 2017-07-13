@@ -14,6 +14,9 @@ let CardComponent = class CardComponent {
     statusToggle() {
         this.task.completed = !this.task.completed;
     }
+    deleteTask() {
+        this.task.exist = false;
+    }
 };
 __decorate([
     core_1.Input(), 

@@ -20,3 +20,11 @@ i{
     background-color: #EEE;
     color: #CCC;
 }
+.remove{
+    padding-top: .5rem;
+    position:relative;
+    float:right;
+}
+.remove i{
+    color: #000;
+}

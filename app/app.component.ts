@@ -11,10 +11,10 @@ import { Task } from './model/task';
 
 export class AppComponent { 
     private tasks: Task[] = [];
-    private currentTask = new Task(null, false);
+    private currentTask = new Task(null, false, true);
 
     addTask():void{
-        let task = new Task(this.currentTask.content, this.currentTask.completed);
+        let task = new Task(this.currentTask.content, this.currentTask.completed, this.currentTask.exist);
         this.tasks.push(task);
         this.currentTask.content = null;
     }

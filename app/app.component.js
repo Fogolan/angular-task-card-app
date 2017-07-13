@@ -13,10 +13,10 @@ const task_1 = require('./model/task');
 let AppComponent = class AppComponent {
     constructor() {
         this.tasks = [];
-        this.currentTask = new task_1.Task(null, false);
+        this.currentTask = new task_1.Task(null, false, true);
     }
     addTask() {
-        let task = new task_1.Task(this.currentTask.content, this.currentTask.completed);
+        let task = new task_1.Task(this.currentTask.content, this.currentTask.completed, this.currentTask.exist);
         this.tasks.push(task);
         this.currentTask.content = null;
     }

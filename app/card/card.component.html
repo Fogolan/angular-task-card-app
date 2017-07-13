@@ -1,5 +1,6 @@
-<div class="col-sm-3">
+<div class="col-sm-3" *ngIf="task.exist">
     <div class="card" (click)="statusToggle()" [class.completed]="task.completed" >
+        <span class="remove" (click)="deleteTask()"><i class="fa fa-trash" aria-hidden="true"></i></span>        
         <div class="card-block">
             <p>{{ task.content }}</p>
         </div>

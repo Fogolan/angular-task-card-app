@@ -1,8 +1,9 @@
 "use strict";
 class Task {
-    constructor(content, completed) {
+    constructor(content, completed, exist) {
         this.content = content;
         this.completed = completed;
+        this.exist = exist;
     }
 }
 exports.Task = Task;
